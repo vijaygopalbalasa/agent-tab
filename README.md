@@ -5,6 +5,7 @@ Prepaid USDC tabs so one AI agent, or any service, can be paid per request. The 
 Built in [Arc Studio](https://studio.arc.io) and live on Arc mainnet.
 
 - Live app: https://agent-tab-arc.vercel.app
+- Walkthrough video (the build in Arc Studio and the mainnet run): https://agent-tab-arc.vercel.app/walkthrough.mp4
 - Arc Studio project: https://studio.arc.io/app/e0a12efd-b5fc-418d-bdf3-a14077c6689a
 - Contract on Arc mainnet: [`0x9c984c55a585f5360fcaab5fde6d8bfcab02aa91`](https://explorer.arc.io/address/0x9c984c55a585f5360fcaab5fde6d8bfcab02aa91), source verified on [Sourcify](https://repo.sourcify.dev/5042/0x9c984c55a585f5360fcaab5fde6d8bfcab02aa91) (exact match), deployed in [`0x42b5f83d…`](https://explorer.arc.io/tx/0x42b5f83d64a5c504de2fe3c578129eeb6ead3ad686d038d3f6f386171d388741)
 - Contract on Arc testnet: [`0x57a4c16047e36efb1dcf5fb51621b95ee3646d3a`](https://testnet.arcscan.app/address/0x57a4c16047e36efb1dcf5fb51621b95ee3646d3a)
