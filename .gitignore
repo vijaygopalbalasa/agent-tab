@@ -1,0 +1,13 @@
+node_modules/
+dist/
+dist-mainnet/
+contracts/out/
+contracts/cache/
+broadcast/
+.env
+.env.*
+.arc-studio/
+.compass/
+.agents/
+.DS_Store
+*.log
