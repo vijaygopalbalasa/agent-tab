@@ -43,10 +43,11 @@ The app picks its network from `VITE_NETWORK` (`ARC-TESTNET` by default, `ARC-MA
 
 ## What changed after Arc Studio
 
-Arc Studio wrote the contract, the tests and the app, and deployed the contract to Arc testnet. A full testnet run with real wallets then found two problems, fixed here:
+Arc Studio wrote the contract, the tests and the app, and deployed the contract to Arc testnet. A full run with real wallets and a review of the app found three problems, fixed here. The contract logic did not change.
 
 - After opening a tab the app never showed its id, and both the voucher and the redeem need it. The id is now read from the `TabOpened` event, shown with a copy button, and filled into the voucher form.
 - After the approval, the button still sent another approval instead of opening the tab, because the allowance was not re-read. It is re-read once the approval lands.
+- Amounts were cut to two decimals, too coarse for per-request payments of a fraction of a cent. Every digit is shown now.
 
 Also added by hand: the mainnet contract address. Arc Studio deploys to testnet only, so the mainnet contract was deployed separately with the same compiled code and verified on Sourcify.
 

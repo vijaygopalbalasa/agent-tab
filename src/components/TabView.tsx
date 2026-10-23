@@ -4,9 +4,10 @@ import { ExternalLink, Search } from 'lucide-react'
 import { AGENT_TAB_ABI, AGENT_TAB_ADDRESS } from '../agentTabContract'
 import { NETWORK, buildAddressUrl } from '../networkConfig'
 import { Amount, usdcDecimalsFor } from '@/onchain-money'
+import { usdcText } from '@/format'
 
 function fmtUsdc(raw: bigint): string {
-  return Amount.fromRaw(raw, usdcDecimalsFor(NETWORK.chainId)).toFixed(2)
+  return usdcText(Amount.fromRaw(raw, usdcDecimalsFor(NETWORK.chainId)))
 }
 
 const CHAIN_ID = NETWORK.chainId

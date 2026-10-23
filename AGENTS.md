@@ -28,6 +28,10 @@ Agent Tab is a prepaid USDC tab system for AI-agent-to-agent payments on Arc. A 
 - Explorer: https://explorer.testnet.arc.io/address/0x57a4c16047e36efb1dcf5fb51621b95ee3646d3a
 - Deployed: 2026-10-23
 
+## Arc mainnet
+
+Live at `0x9c984c55a585f5360fcaab5fde6d8bfcab02aa91` (chain 5042), source verified on Sourcify (exact match). Build the app for it with `VITE_NETWORK=ARC-MAINNET bun run build`. README.md lists the mainnet transactions and the fixes made after the Arc Studio build.
+
 ## Key Files
 
 - `src/App.tsx` - Main composition root (3 tabs: Payer, Service, Lookup Tab)

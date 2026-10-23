@@ -13,9 +13,10 @@ import { toast } from 'sonner'
 import { AGENT_TAB_ABI, AGENT_TAB_ADDRESS, VOUCHER_TYPES } from '../agentTabContract'
 import { NETWORK, buildTxUrl } from '../networkConfig'
 import { parseAmount, Amount, usdcDecimalsFor } from '@/onchain-money'
+import { usdcText } from '@/format'
 
 function fmtUsdc(chainId: number, raw: bigint): string {
-  return Amount.fromRaw(raw, usdcDecimalsFor(chainId)).toFixed(2)
+  return usdcText(Amount.fromRaw(raw, usdcDecimalsFor(chainId)))
 }
 
 const CHAIN_ID = NETWORK.chainId
